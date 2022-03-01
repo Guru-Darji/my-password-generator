@@ -32,6 +32,27 @@ var generateBtn = document.querySelector("#generate");
 
   
 }
+  var masterPassword = []
+
+  if (checksmolLetters) {
+    masterPassword = masterPassword.concat(smolLetters)
+  }
+
+  if (checkbigLetters) {
+    masterPassword = masterPassword.concat(bigLetters)
+  }
+    
+  if (checkspecial) {
+    masterPassword = masterPassword.concat(special)
+  }
+
+  if (checknumbers) {
+    masterPassword = masterPassword.concat(numbers)
+  }
+
+
+  console.log(masterPassword)
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
